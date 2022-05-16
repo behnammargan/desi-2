@@ -384,8 +384,13 @@ a:hover {
 /* Dropdown Menu */
 .navbar .dropdown .dropdown-menu {
 	animation: fadeDropdown 0.2s; /* required for the fade animation */
+	max-height: 500px;
+    overflow-x: hidden;
 }
-
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }
 @keyframes fadeDropdown {
     0% {
         opacity: 0;
