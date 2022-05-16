@@ -387,10 +387,7 @@ a:hover {
 	max-height: 500px;
     overflow-x: hidden;
 }
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0; 
- }
+
 @keyframes fadeDropdown {
     0% {
         opacity: 0;
@@ -1140,6 +1137,11 @@ video {
 		font-size: 2rem;
 		line-height: 2.75rem;
 		padding-top: 20px;
+	}
+
+		.dropdown:hover .dropdown-menu {
+		display: block;
+		margin-top: 0;
 	}
 	/* end of header */
 
