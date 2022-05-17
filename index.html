@@ -252,7 +252,7 @@
                     
                     <!-- Filter -->
                     <div class="button-group filters-button-group">
-                        <button class="button is-checked" data-filter="*">SHOW ALL</button>
+                        <button id="#showall" class="button is-checked" data-filter="*">SHOW ALL</button>
                         <button class="button" data-filter=".industries">Industries</button>
                         <button class="button" data-filter=".products">Products</button>
                         <!-- <button class="button" data-filter=".software">SOFTWARE</button> -->
@@ -444,6 +444,15 @@
     <!-- end of back to top button -->
     	
     <!-- Scripts -->
+
+<script>
+    window.onload = function() {
+
+        document.getElementById("showall").click();
+
+};
+</script>
+
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
     <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
