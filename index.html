@@ -46,55 +46,51 @@
             <button type="button" 
             onclick="document.getElementById('navbar').style.backgroundColor ='#00688b'
             document.getElementById('footer').style.backgroundColor = '#00688b'
+            document.getElementById('colorpick').value = '#00688b'
             ">
             green!</button>
 
             <button type="button" 
             onclick="document.getElementById('navbar').style.backgroundColor = '#551b8c'
             document.getElementById('footer').style.backgroundColor = '#551b8c'
+            document.getElementById('colorpick').value = '#551b8c'
+
             ">
             
             purple!</button>
 
-
-            <button type="button" 
-            onclick="document.getElementById('navbar').style.backgroundColor = '#1c0d82'
-            document.getElementById('footer').style.backgroundColor = '#1c0d82'
-            ">
-            
-            blue!</button>
-
-
-            <button type="button" 
-            onclick="document.getElementById('navbar').style.backgroundColor = '#a13670'
-            document.getElementById('footer').style.backgroundColor = '#a13670'
-            ">
-            
-
-            red!</button>
-
-
             <button type="button" 
             onclick="document.getElementById('navbar').style.backgroundColor = '#162944'
             document.getElementById('footer').style.backgroundColor = '#162944'
+            document.getElementById('colorpick').value = '#162944'
+
             ">
             
 
-            rezatec_blue</button>
+            blue</button>
 
 
+            <div>
+                <input type="color" id="colorpick" name="head"
+                       value="#162944">
+                <!-- <label for="colorpick">color</label> -->
+            </div>
 
 
+            <script>
+                document.getElementById("colorpick").value = `${document.getElementById('navbar').style.backgroundColor}`;
+                
+                const selectElement = document.querySelector('#colorpick');
+                selectElement.addEventListener('input', (event) => {
+                // const result = document.querySelector('.result');
+                // result.textContent = `You like ${event.target.value}`;
 
-            <button type="button" 
-            onclick="document.getElementById('navbar').style.backgroundColor = '#203d64'
-            document.getElementById('footer').style.backgroundColor = '#203d64'
-            ">
-            
+                document.getElementById('navbar').style.backgroundColor = `${event.target.value}`
+            document.getElementById('footer').style.backgroundColor = `${event.target.value}`
 
-            brighter _blue</button>
+                });
+            </script>
 
-            
 
             <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -288,7 +284,7 @@
                         </div>
                         <div class="element-item industries">
                             <a href="article.html">
-                                <img class="img-fluid" src="images/infras/Agriculture/DJI_0011-min.JPG" alt="alternative">
+                                <img class="img-fluid" src="images/infras/Agriculture/DJI_0167.JPG" alt="alternative">
                                 <p><strong>Loans company</strong> - enjoyed minutes related as at on on. Is fanny dried camping today</p>
                             </a>
                         </div>
