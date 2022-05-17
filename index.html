@@ -27,7 +27,6 @@
     <link href="css/fontawesome-all.min.css" rel="stylesheet">
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
-    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
 
 	
 	<!-- Favicon  -->
@@ -73,6 +72,29 @@
             
 
             red!</button>
+
+
+            <button type="button" 
+            onclick="document.getElementById('navbar').style.backgroundColor = '#162944'
+            document.getElementById('footer').style.backgroundColor = '#162944'
+            ">
+            
+
+            rezatec_blue</button>
+
+
+
+
+
+            <button type="button" 
+            onclick="document.getElementById('navbar').style.backgroundColor = '#203d64'
+            document.getElementById('footer').style.backgroundColor = '#203d64'
+            ">
+            
+
+            brighter _blue</button>
+
+            
 
             <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -253,7 +275,7 @@
                     <!-- Filter -->
                     <div class="button-group filters-button-group">
                         <button id="#showall" class="button is-checked" data-filter="*">SHOW ALL</button>
-                        <button class="button" data-filter=".industries">Industries</button>
+                        <button id="#showind class="button" data-filter=".industries">Industries</button>
                         <button class="button" data-filter=".products">Products</button>
                         <!-- <button class="button" data-filter=".software">SOFTWARE</button> -->
                     </div> <!-- end of button group -->
@@ -447,13 +469,10 @@
 
 <script>
 
-        
-        document.getElementById("body").addEventListener("load", myFunction);
 
-        function myFunction() {
-            document.getElementById("showall").click();
-}
+
 </script>
+<script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
 
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
