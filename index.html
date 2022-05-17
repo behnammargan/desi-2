@@ -446,11 +446,13 @@
     <!-- Scripts -->
 
 <script>
-    window.onload = function() {
 
-        document.getElementById("showall").click();
+        
+        document.getElementById("body").addEventListener("load", myFunction);
 
-};
+        function myFunction() {
+            document.getElementById("showall").click();
+}
 </script>
 
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
